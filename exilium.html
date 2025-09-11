@@ -4,43 +4,66 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exilum Claw</title>
+  <meta name="description" content="Comunidad de jugadores de Albion">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav">
+  <a class="skiplink" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar" role="banner">
+    <nav class="nav" aria-label="Navegación principal">
       <a class="pill" href="#">Contenido</a>
-      <a class="pill" href="#">Guias</a>
+      <a class="pill" href="#">Guías</a>
       <a class="pill" href="#">Builds</a>
     </nav>
   </header>
-  <div class="band"></div>
-  <main class="panel">
+
+  <div class="band" aria-hidden="true"></div>
+
+  <main id="contenido" class="panel">
     <section class="panel__inner">
-      <div class="title-box">
+      <div class="title-box" role="img" aria-label="Exilum Claw, marca principal">
         <h1 class="brand">
           EXILUM CL<span class="accent">A</span>W
         </h1>
-      </div>
-      <p class="subtitle">¿Quieres formar parte?</p>
-      <div class="logos">
-      <a href="https://discord.gg/QTwNgsDD"
-         target="_blank" rel="noopener noreferrer" class="logo">
-         <img src="img/discordlogo.png" alt="Discord">
-      </a>
-
-      <a href="https://www.tiktok.com/@exilium.claw"
-         target="_blank" rel="noopener noreferrer" class="logo">
-         <img src="img/tiktoklogo.png" alt="Tiktok">
-      </a>
-
-      <a href="https://youtube.com"
-        target="_blank" rel="noopener noreferrer" class="logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-      </a>
+        <p class="subtitle">¿Quieres formar parte?</p>
       </div>
 
+      <div class="logos" aria-label="Redes sociales de Exilum Claw">
+        <a href="https://discord.gg/QTwNgsDD" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al Discord de Exilum Claw">
+          <span class="logo__ring">
+            <img src="img/discordlogo.png" alt="Discord de Exilum Claw">
+          </span>
+          <span class="logo__label">Discord</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@exilium.claw" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al TikTok de Exilum Claw">
+          <span class="logo__ring">
+            <img src="img/tiktoklogo.png" alt="TikTok de Exilum Claw">
+          </span>
+          <span class="logo__label">TikTok</span>
+        </a>
+
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al YouTube de Exilum Claw">
+          <span class="logo__ring">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube de Exilum Claw">
+          </span>
+          <span class="logo__label">YouTube</span>
+        </a>
+      </div>
     </section>
   </main>
+
+  <footer class="sitefooter" role="contentinfo">
+    <p>© <span id="year"></span> Exilum Claw. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
