@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Exilium Claw</title>
-  <meta name="description" content="Comunidad de jugadores de Albion">
-  <link rel="icon" href="img/favicon.png" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exilium Claw - Comunidad élite de jugadores de Albion Online. Únete a nuestro Discord, sigue nuestro contenido en TikTok e Instagram.">
+  <meta name="keywords" content="Albion Online, guild, comunidad, gaming, PvP, builds, guías">
+  <meta name="author" content="Exilium Claw">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Exilium Claw - Comunidad de Albion Online">
+  <meta property="og:description" content="¿Quieres formar parte de la comunidad gaming más activa? Únete a Exilium Claw.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://exiliumclaw.com">
+  <meta property="og:image" content="./img/og-image.jpg">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Exilium Claw - Comunidad de Albion Online">
+  <meta name="twitter:description" content="¿Quieres formar parte de la comunidad gaming más activa? Únete a Exilium Claw.">
+  <meta name="twitter:image" content="./img/twitter-card.jpg">
+  
+  <title>Exilium Claw - Comunidad de Albion Online</title>
+  
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="apple-touch-icon" href="./img/favicon.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preload" as="image" href="img/fondo-lava.webp">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+  
+  <link rel="preload" as="image" href="./img/fondoprincipal.jpeg" type="image/jpeg">
 </head>
 <body>
-  <a class="skiplink" href="#contenido">Saltar al contenido</a>
+  <a class="skiplink" href="#main-content">Saltar al contenido principal</a>
   
   <header class="topbar" role="banner">
-    <nav class="nav" aria-label="Navegación principal">
-      <a class="nav-item" href="pages/contenido.html">Contenido</a>
-      <a class="nav-item" href="pages/guias.html">Guías</a>
-      <a class="nav-item" href="pages/builds.html">Builds</a>
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a class="nav-item" href="#contenido">
+        Contenido
+      </a>
+      <a class="nav-item" href="#guias">
+        Guías
+      </a>
+      <a class="nav-item" href="builds.html">
+        Builds
+      </a>
     </nav>
   </header>
 
-  <div class="band" aria-hidden="true"></div>
+  <div class="band" aria-hidden="true" role="presentation"></div>
   
-  <main id="contenido" class="panel" tabindex="-1">
-    <section class="panel__inner">
-      <div class="title-box" role="img" aria-label="Exilum Claw, marca principal">
-        <h1 class="brand">EXILUM CL<span class="accent">A</span>W</h1>
-        <p class="subtitle">¿Quieres formar parte?</p>
-      </div>
+  <main id="main-content" class="panel" tabindex="-1">
+    <section class="panel__inner" role="main">
+      <header class="title-box">
+        <h1 class="brand">
+          EXILUM CL<span class="accent">A</span>W
+        </h1>
+        <p class="subtitle">¿Quieres formar parte de nuestra comunidad?</p>
+      </header>
 
-      <div class="logos" aria-label="Redes sociales de Exilum Claw">
-        <a href="https://discord.gg/QTwNgsDD" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al Discord de Exilum Claw">
-          <span class="logo__ring">
-            <img src="img/discordlogo.png" alt="Discord de Exilum Claw">
-          </span>
-          <span class="logo__label">Discord</span>
-        </a>
+      <section class="social-links">
+        <div class="logos">
+          <a href="https://discord.gg/QTwNgsDD" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="logo">
+            <span class="logo__ring">
+              <img src="./img/discordlogo.png" 
+                   alt="Discord" 
+                   loading="lazy"
+                   width="64" 
+                   height="64">
+            </span>
+            <span class="logo__label">Discord</span>
+          </a>
 
-        <a href="https://www.tiktok.com/@exilium.claw" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al TikTok de Exilum Claw">
-          <span class="logo__ring">
-            <img src="img/tiktoklogo.png" alt="TikTok de Exilum Claw">
-          </span>
-          <span class="logo__label">TikTok</span>
-        </a>
+          <a href="https://www.tiktok.com/@exilium.claw" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="logo">
+            <span class="logo__ring">
+              <img src="./img/tiktoklogo.png" 
+                   alt="TikTok" 
+                   loading="lazy"
+                   width="64" 
+                   height="64">
+            </span>
+            <span class="logo__label">TikTok</span>
+          </a>
 
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="logo" aria-label="Ir al YouTube de Exilum Claw">
-          <span class="logo__ring">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube de Exilum Claw">
-          </span>
-          <span class="logo__label">YouTube</span>
-        </a>
-      </div>
+          <a href="https://instagram.com/exilium.claw" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="logo">
+            <span class="logo__ring">
+              <img src="./img/instagramlogo.png" 
+                   alt="Instagram" 
+                   loading="lazy"
+                   width="64" 
+                   height="64">
+            </span>
+            <span class="logo__label">Instagram</span>
+          </a>
+        </div>
+      </section>
     </section>
   </main>
 
-  <footer class="sitefooter" role="contentinfo">
-    <p>© <span id="year"></span> Exilium Claw. Todos los derechos reservados.</p>
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      &copy; <span id="current-year">2024</span> Exilium Claw. 
+      Todos los derechos reservados.
+    </p>
+    <p class="footer-disclaimer">
+      Exilium Claw no está afiliado oficialmente con Albion Online o Sandbox Interactive.
+    </p>
   </footer>
 
-  <script src="exiliumjs.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearElement = document.getElementById('current-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
 </body>
 </html>
